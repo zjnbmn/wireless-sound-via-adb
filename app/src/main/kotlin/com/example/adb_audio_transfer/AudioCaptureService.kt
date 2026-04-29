@@ -79,9 +79,9 @@ class AudioCaptureService : Service() {
 
         serviceScope.launch {
             try {
-                // 启动 TCP 服务器
-                serverSocket = ServerSocket(9876)
-                Log.i(TAG, "Server started on port 9876")
+                // 启动 TCP 服务器，监听所有网卡
+                serverSocket = ServerSocket(9876, 50, java.net.InetAddress.getByName("0.0.0.0"))
+                Log.i(TAG, "Server started on port 9876 (0.0.0.0)")
 
                 clientSocket = serverSocket?.accept()
                 Log.i(TAG, "Client connected: ${clientSocket?.inetAddress}")
