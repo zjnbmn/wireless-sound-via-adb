@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ADB Audio Transfer</string>
+    <string name="mode_sender">发送端</string>
+    <string name="mode_receiver">接收端</string>
+    <string name="start_capture">开始捕获</string>
+    <string name="stop_capture">停止捕获</string>
+    <string name="start_receive">开始接收</string>
+    <string name="stop_receive">停止接收</string>
+    <string name="status_idle">空闲</string>
+    <string name="status_capturing">正在捕获...</string>
+    <string name="status_receiving">正在接收...</string>
+    <string name="status_connecting">连接中...</string>
+    <string name="server_port_hint">服务器端口</string>
+    <string name="server_ip_hint">服务器 IP</string>
+    <string name="default_port">9876</string>
+    <string name="capture_permission_required">需要屏幕录制权限来捕获系统音频</string>
+</resources>
